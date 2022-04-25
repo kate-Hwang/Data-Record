@@ -1,11 +1,11 @@
 import './App.css';
+import ExpenseItem from './components/Expenseltem';
 
 function App() {
   return (
-    <div>
-      <h2>Let's get started!!</h2>
-      <p>짜증나는 연애</p>
-    </div>
+    <>
+      <ExpenseItem></ExpenseItem>
+    </>
   );
 }
 
