@@ -7,13 +7,7 @@
     padding: 0.5rem;
     margin: 1rem 0;
     border-radius: 12px;
-    background-color: #4b4b4b;
-  }
-  .expense-date-contents{
-      width: 11%;
-      padding: 0 0.2rem;
-      color: bisque;
-      text-align: center;
+    background-color: #696969;
   }
   .expense-item__description {
     display: flex;
