@@ -9,7 +9,12 @@
     border-radius: 12px;
     background-color: #4b4b4b;
   }
-  
+  .expense-date-contents{
+      width: 11%;
+      padding: 0 0.2rem;
+      color: bisque;
+      text-align: center;
+  }
   .expense-item__description {
     display: flex;
     flex-direction: column;
