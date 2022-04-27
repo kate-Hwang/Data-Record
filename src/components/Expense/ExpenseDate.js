@@ -1,5 +1,4 @@
-import React from 'react';
-import '../assets/css/ExpenseData.css';
+import '../../assets/css/Expense/ExpenseData.css';
 
 const ExpenseDate = (props) => {
     
