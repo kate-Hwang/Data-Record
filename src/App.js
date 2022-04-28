@@ -12,9 +12,14 @@ function App(props) {
     { id:'e4', title: 'new Macbook', amount:450, date: new Date(2022, 10, 13)},
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('In App.js');
+    console.log(expense);
+  };
+
   return (
       <div>
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseHandler}/>
         <Expense items={expenses}/>
       </div>
   );
