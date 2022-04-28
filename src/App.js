@@ -1,5 +1,6 @@
 import './App.css';
 
+import NewExpense from './components/NewExpense/NewExpense';
 import Expense from './components/Expense/Expense';
 
 function App(props) {
@@ -13,6 +14,7 @@ function App(props) {
 
   return (
       <div>
+        <NewExpense />
         <Expense items={expenses}/>
       </div>
   );
