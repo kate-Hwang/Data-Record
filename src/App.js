@@ -11,13 +11,13 @@ import { useState } from 'react';
       { id:'e4', title: 'new Macbook', amount:450, date: new Date(2022, 10, 13)},
     ];
 
-function App(props) {
+function App() {
 
   const [expenses, setExpenses] = useState(DUMMY_EXPENSE);
 
   const addExpenseHandler = expense => {
     setExpenses(prevExpenses => {
-      return [expense, ...prevExpenses];
+      return [expenses, ...prevExpenses]
     });
   };
 

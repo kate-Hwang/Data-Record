@@ -11,7 +11,7 @@ const Expense = (props) => {
 
     const [ filteredYear, setFilteredYear ] = useState('2020'); //화면에 기본셀렉트 설정값지정하기
 
-    const filterEventHandler = (selectedYear) => {
+    const filterEventHandler = selectedYear => {
         setFilteredYear(selectedYear);
     };
 
@@ -19,11 +19,11 @@ const Expense = (props) => {
         <>   
             <Card className="expenses">
                 <ExpenseFilter selected={filteredYear} onChangeAddFilter={filterEventHandler}/>
-                {props.items.map((expense) => ( 
+                {props.items.map((expenses) => ( 
                         <ExpenseItem 
-                            title={expense.title}
-                            amount={expense.amount}
-                            date={expense.date}
+                            title={expenses.title}
+                            amount={expenses.amount}
+                            date={expenses.date}
                         />
                     ))}
             </Card>
