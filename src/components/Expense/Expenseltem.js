@@ -8,7 +8,6 @@ import Card from '../UI/Card';
 const ExpenseItem = (props) => { 
 
     const [title, setTitle] = useState(props.title);
-    // console.log('돌아가면서 표현하긔');
 
     const clickHandler = () =>{
         setTitle('Update!!!');
